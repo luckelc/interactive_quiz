@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c33fc9fa54ff5c98da69d3f58f49fe, type: 3}
+  m_Name: "Fr\xE5ga 2"
+  m_EditorClassIdentifier: 
+  question: "Vad borde man \xE4ta?"
+  fullAnswers:
+  - {fileID: 11400000, guid: fd8a689a6dd564d40864a42dd09f5719, type: 2}
+  halfAnswers:
+  - {fileID: 11400000, guid: a1148a8a741d4cd419764fad39c1102d, type: 2}
+  noneAnswers:
+  - {fileID: 11400000, guid: f24b8e1c180d9fc4f8cd18bbbf44107a, type: 2}
+  - {fileID: 11400000, guid: dc19049ce61ff3a4bbe5d648cf3b90ea, type: 2}
