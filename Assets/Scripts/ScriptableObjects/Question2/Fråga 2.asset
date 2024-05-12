@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99c33fc9fa54ff5c98da69d3f58f49fe, type: 3}
   m_Name: "Fr\xE5ga 2"
   m_EditorClassIdentifier: 
-  question: "Vad borde man \xE4ta?"
+  question: "Vad \xE4r igenomskinligt?"
   fullAnswers:
   - {fileID: 11400000, guid: fd8a689a6dd564d40864a42dd09f5719, type: 2}
   halfAnswers:
