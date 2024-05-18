@@ -71,11 +71,11 @@ public class QuestionManager : MonoBehaviour
 
                 // Assign halfAnswer
                 answerManagers[2].AnswerText = questions[0].halfAnswers[0].answer;
-                answerManagers[2].answerPoints = 100;
+                answerManagers[2].answerPoints = 1;
 
                 // Assign fullAnswer
                 answerManagers[3].AnswerText = questions[0].fullAnswers[0].answer;
-                answerManagers[3].answerPoints = 200;
+                answerManagers[3].answerPoints = 2;
             }
 
             RandomizeChildren();

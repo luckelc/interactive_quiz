@@ -9,6 +9,9 @@ public class AnswerManager : MonoBehaviour
     private TextMeshProUGUI textElement;
 
     [SerializeField]
+    private PointManager pointMan;
+
+    [SerializeField]
     QuestionManager questionManager;
 
     public int answerPoints;
@@ -30,6 +33,7 @@ public class AnswerManager : MonoBehaviour
     public void OnAnswerPress()
     {
         questionManager.Points += answerPoints;
+        pointMan.AddPoints(answerPoints);
         questionManager.QuestionAnswered();
     }
 
