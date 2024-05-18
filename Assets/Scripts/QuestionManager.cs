@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestionManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class QuestionManager : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI questionText;
 
+    [SerializeField]
+    Image questionImage;
 
     [SerializeField]
     TextMeshProUGUI pointsText;
@@ -46,6 +49,13 @@ public class QuestionManager : MonoBehaviour
         if (questions.Count > 0)
         {
             questionText.text = questions[0].question;
+
+            if(questions[0].imageTexture){
+                questionImage.gameObject.SetActive(true);
+                questionImage.sprite = questions[0].imageTexture;
+            }else{
+                questionImage.gameObject.SetActive(false);
+            }
 
             // Get the AnswerManager components of the children
             AnswerManager[] answerManagers = answerGrid.GetComponentsInChildren<AnswerManager>();

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Perfect
   m_EditorClassIdentifier: 
   question: "Fr\xE5ga 1?"
+  imageTexture: {fileID: 21300000, guid: 8479bdbe65964aff984fd0159bee07ac, type: 3}
   fullAnswers:
   - {fileID: 11400000, guid: 7894f60969a2ed56b83c2d94a107fb7a, type: 2}
   halfAnswers:
