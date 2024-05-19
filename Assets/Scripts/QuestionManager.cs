@@ -64,17 +64,17 @@ public class QuestionManager : MonoBehaviour
             if (questions[0].noneAnswers.Count >= 2 && questions[0].halfAnswers.Count >= 1 && questions[0].fullAnswers.Count >= 1 && answerManagers.Length >= 4)
             {
                 // Assign noneAnswers
-                answerManagers[0].AnswerText = questions[0].noneAnswers[0].answer;
+                answerManagers[0].AnswerText = questions[0].noneAnswers[0];
                 answerManagers[0].answerPoints = 0;
-                answerManagers[1].AnswerText = questions[0].noneAnswers[1].answer;
+                answerManagers[1].AnswerText = questions[0].noneAnswers[1];
                 answerManagers[1].answerPoints = 0;
 
                 // Assign halfAnswer
-                answerManagers[2].AnswerText = questions[0].halfAnswers[0].answer;
+                answerManagers[2].AnswerText = questions[0].halfAnswers[0];
                 answerManagers[2].answerPoints = 1;
 
                 // Assign fullAnswer
-                answerManagers[3].AnswerText = questions[0].fullAnswers[0].answer;
+                answerManagers[3].AnswerText = questions[0].fullAnswers[0];
                 answerManagers[3].answerPoints = 2;
             }
 

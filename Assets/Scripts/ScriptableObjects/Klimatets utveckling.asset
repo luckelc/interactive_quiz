@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99c33fc9fa54ff5c98da69d3f58f49fe, type: 3}
-  m_Name: Perfect
+  m_Name: Klimatets utveckling
   m_EditorClassIdentifier: 
-  question: "Fr\xE5ga 3?"
+  question: "Du \xE4r frustrerad \xF6ver klimatets utveckling och k\xE4nner en hoppl\xF6shet.
+    Vilka aktiviteter kan du dra ig\xE5ng?"
+  imageTexture: {fileID: 21300000, guid: 8479bdbe65964aff984fd0159bee07ac, type: 3}
   fullAnswers:
-  - {fileID: 11400000, guid: 7894f60969a2ed56b83c2d94a107fb7a, type: 2}
+  - "Strandst\xE4dning"
+  - "K\xF6p n\xE4rproducerat"
   halfAnswers:
-  - {fileID: 11400000, guid: 547a8ce65453c0624b11a046fff0b8d8, type: 2}
+  - Skaffa elbil
   noneAnswers:
-  - {fileID: 11400000, guid: 9837504a90dfac39aacedd1568c9a9db, type: 2}
-  - {fileID: 11400000, guid: b81d1df80887555419aa1e37f1a802f2, type: 2}
+  - "G\xF6r ingenting"
+  - "Sl\xE4ng plast i naturen"

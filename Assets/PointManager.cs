@@ -47,7 +47,7 @@ public class PointManager : MonoBehaviour
 
     private void UpdateChildrenColors()
     {
-        if(comparisonValue == 8)
+        if(comparisonValue >= 8)
         {
             houses[2].sprite = newHouse;
         }else if (comparisonValue >= 6)

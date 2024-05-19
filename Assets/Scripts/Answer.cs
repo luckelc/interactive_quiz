@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Answer", menuName = "QuestionObjects/Answer")]
 public class Answer : ScriptableObject
 {
-    public string answer = "";
+
 }

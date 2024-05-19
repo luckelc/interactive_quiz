@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,10 +11,10 @@ public class Question : ScriptableObject
 
     public Sprite imageTexture;
 
-    public List<Answer> fullAnswers = new List<Answer>();
+    public List<String> fullAnswers = new List<String>();
     
-    public List<Answer> halfAnswers = new List<Answer>();
+    public List<String> halfAnswers = new List<String>();
    
-    public List<Answer> noneAnswers = new List<Answer>();
+    public List<String> noneAnswers = new List<String>();
 
 }
