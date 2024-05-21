@@ -9,4 +9,8 @@ public class MainMenuButtons : MonoBehaviour
     {
         SceneManager.LoadScene("Game");
     }
+    public void BackToMeny()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
