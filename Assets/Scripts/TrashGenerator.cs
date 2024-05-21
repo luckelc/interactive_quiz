@@ -8,31 +8,37 @@ using Random=UnityEngine.Random;
 
 public class TrashGenerator : MonoBehaviour
 {
-    public float minX = 75f;
-    public float maxX = 275f;
-    public float rotMin = -100f;
-    public float rotMax = 100f;
-    public float gravMin = 4f;
-    public float gravMax = 5f; 
-    public float scaleMin = 2f;
-    public float scaleMax = 3f;
-    public float speedMin = -1000000000f;
-    public float speedMax = -1200000000f;
+    
     public GameObject trash1;
     public GameObject trash2;
     public GameObject trash3;
     public GameObject trash4;
     public GameObject trash5;
-    public GameObject trash6;
+    private float minX = 75f;
+    private float maxX = 275f;
+    private float rotMin = -100f;
+    private float rotMax = 100f;
+    private float gravMin = 7;
+    private float gravMax = 10; 
+    private float scaleMin = 4;
+    private float scaleMax = 5;
+    private float speedMin = 45;
+    private float speedMax = 50;
 
     void Generate()
     {
+        
         // Define random values
         float randomX = Random.Range(minX, maxX);
+        Debug.Log(randomX);
         float randomRotationSpeed = Random.Range(rotMin, rotMax);
+        Debug.Log(randomRotationSpeed);
         float randomGravity = Random.Range(gravMin, gravMax);
+        Debug.Log(randomGravity);
         float randomScale = Random.Range(scaleMin, scaleMax);
+        Debug.Log(randomScale);
         float randomSpeed = Random.Range(speedMin, speedMax);
+        Debug.Log(randomSpeed);
         // Instantiate the clone
         Vector2 randomPosition = new Vector2(randomX, 700);
         GameObject trash = Instantiate(trash1, randomPosition, Quaternion.identity);
@@ -43,8 +49,11 @@ public class TrashGenerator : MonoBehaviour
         // Add a Rigidbody2D component to the sprite to enable physics and add movement 
         Rigidbody2D rb = trash.AddComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Dynamic;
+        rb.velocity = new Vector3(0, -randomSpeed, 0);
+        Debug.Log(randomGravity);
         rb.gravityScale = randomGravity;
-        rb.velocity = new Vector2(0, -randomSpeed);
+        
+        Debug.Log("Initial Velocity: " + rb.velocity);
         
     }
 
@@ -52,9 +61,9 @@ public class TrashGenerator : MonoBehaviour
     void Start()
     {
         Generate();
-        Generate();
-        Generate();
-        Generate();
+        //Generate();
+        //Generate();
+        //Generate();
     }
 
     // Update is called once per frame
