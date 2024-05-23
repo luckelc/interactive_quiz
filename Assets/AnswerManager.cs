@@ -12,6 +12,9 @@ public class AnswerManager : MonoBehaviour
     private PointManager pointMan;
 
     [SerializeField]
+    private TrashGenerator trashGenerator;
+
+    [SerializeField]
     QuestionManager questionManager;
 
     public int answerPoints;
@@ -34,6 +37,7 @@ public class AnswerManager : MonoBehaviour
     {
         questionManager.Points += answerPoints;
         pointMan.AddPoints(answerPoints);
+        trashGenerator.Generate(answerPoints * 8);
         questionManager.QuestionAnswered();
     }
 

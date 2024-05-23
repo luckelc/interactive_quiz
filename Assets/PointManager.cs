@@ -9,13 +9,16 @@ public class PointManager : MonoBehaviour
     public List<Image> houses = new List<Image>();
 
     [SerializeField]
-    Sprite regHouse;
-
-    [SerializeField]
     Sprite newHouse;
 
     [SerializeField]
     private int comparisonValue; // The int value to compare against the child's position in the hierarchy
+
+    [SerializeField]
+    Sprite fullStar;
+
+    [SerializeField]
+    Image[] stars;
 
     public int ComparisonValue
     {
@@ -50,13 +53,16 @@ public class PointManager : MonoBehaviour
         if(comparisonValue >= 8)
         {
             houses[2].sprite = newHouse;
+            stars[2].sprite = fullStar;
         }else if (comparisonValue >= 6)
         {
             houses[1].sprite = newHouse;
+            stars[1].sprite = fullStar;
         }
         else if (comparisonValue >= 4)
         {
             houses[0].sprite = newHouse;
+            stars[0].sprite = fullStar;
         }
 
         // Loop through all child transforms

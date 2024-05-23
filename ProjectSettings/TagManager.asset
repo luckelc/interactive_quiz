@@ -45,3 +45,6 @@ TagManager:
   - name: FunnleAndFactory
     uniqueID: 3326649083
     locked: 0
+  - name: Points
+    uniqueID: 3298027613
+    locked: 0

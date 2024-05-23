@@ -18,7 +18,26 @@ public class QuestionManager : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI pointsText;
 
+    [SerializeField]
+    GameObject gameScreen;
+
+    [SerializeField]
+    GameObject endScreen;
+
     int points;
+
+    private void Start()
+    {
+        ChangeToNextQuestion();
+        Points = 0;
+        endScreen.SetActive(false);
+    }
+
+    void ToggleGameMode()
+    {
+        gameScreen.SetActive(false);
+        endScreen.SetActive(true);
+    }
 
     public int Points
     {
@@ -37,11 +56,6 @@ public class QuestionManager : MonoBehaviour
     [SerializeField]
     Transform answerGrid;
 
-    private void Start()
-    {
-        ChangeToNextQuestion();
-        Points = 0;
-    }
 
     void ChangeToNextQuestion()
     {
@@ -84,6 +98,7 @@ public class QuestionManager : MonoBehaviour
         else
         {
             print("You have cleared all questions");
+            ToggleGameMode();
         }
     }
     public void QuestionAnswered()
