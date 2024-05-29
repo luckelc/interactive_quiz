@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99c33fc9fa54ff5c98da69d3f58f49fe, type: 3}
-  m_Name: "T\xF6rstig"
+  m_Name: "F\xE4rg"
   m_EditorClassIdentifier: 
-  question: "Du \xE4r t\xF6rstig? Du befinner dig p\xE5 ett caf\xE9 och st\xE4lls
-    inf\xF6r en rad olika alternativ"
-  imageTexture: {fileID: 21300000, guid: 4d9b5db99d32ca9478fdace31bf2c846, type: 3}
+  question: "Vilken f\xE4rg  av plastp\xE5se inneh\xE5ller troligen mest \xE5tervunnen
+    plast?"
+  imageTexture: {fileID: 21300000, guid: d37a7c4077ad5834f82a54b6f1a80d3c, type: 3}
   fullAnswers:
-  - "Fyll p\xE5 en diskbar mugg"
+  - "Gr\xE5a"
   halfAnswers:
-  - "K\xF6p en vattenflaska"
+  - "Gr\xE5a med svarta r\xE4nder"
   noneAnswers:
-  - "Drick ur en eng\xE5ngsmugg"
-  - "K\xF6p icke \xE5tervinningsbar drickor"
+  - Vita
+  - Svarta

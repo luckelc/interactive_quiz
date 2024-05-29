@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: "Du \xE4r frustrerad \xF6ver klimatets utveckling och k\xE4nner en hoppl\xF6shet.
     Vilka aktiviteter kan du dra ig\xE5ng?"
-  imageTexture: {fileID: 21300000, guid: 8479bdbe65964aff984fd0159bee07ac, type: 3}
+  imageTexture: {fileID: 21300000, guid: f73e9e70da135da4688253f7a59ca574, type: 3}
   fullAnswers:
   - "Strandst\xE4dning"
   - "K\xF6p n\xE4rproducerat"

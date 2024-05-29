@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: "Vart ska du sl\xE4nga din b\xE4sta bil du n\xE5gonsin \xE4gt, men som
     inte l\xE4ngre g\xE5r att laga eller ge till n\xE5gon annan?"
-  imageTexture: {fileID: 0}
+  imageTexture: {fileID: 21300000, guid: 056bc1a33dd6526469d16b092a680675, type: 3}
   fullAnswers:
   - "Container f\xF6r h\xE5ldplast \xC5VC"
   halfAnswers:
-  - Halvt svar
+  - "Br\xE4nnbart"
   noneAnswers:
   - "Obr\xE4nnbart"
-  - "Br\xE4nnbart"
+  - Kastar den i havet

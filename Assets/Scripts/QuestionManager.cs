@@ -24,17 +24,48 @@ public class QuestionManager : MonoBehaviour
     [SerializeField]
     GameObject endScreen;
 
+
+    [SerializeField]
+    List<Button> buttons = new List<Button>();
+
     int points;
 
     private void Start()
     {
+        Shuffle(questions);
+        for (int i = 0; i < questions.Count; i++)
+        {
+            if(i > 2)
+            {
+                questions.RemoveAt(i);
+            }
+        }
         ChangeToNextQuestion();
         Points = 0;
         endScreen.SetActive(false);
     }
 
-    void ToggleGameMode()
+    public static void Shuffle<T>(IList<T> list)
     {
+        int n = list.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = Random.Range(0, n + 1);
+            T value = list[k];
+            list[k] = list[n];
+            list[n] = value;
+        }
+    }
+
+    IEnumerator ToggleGameMode()
+    {
+        for (int i = 0;i < buttons.Count;i++)
+        {
+            buttons[i].enabled = false;
+        }
+        yield return new WaitForSeconds(1.5f);
+
         gameScreen.SetActive(false);
         endScreen.SetActive(true);
     }
@@ -98,7 +129,8 @@ public class QuestionManager : MonoBehaviour
         else
         {
             print("You have cleared all questions");
-            ToggleGameMode();
+            
+            StartCoroutine(ToggleGameMode());
         }
     }
     public void QuestionAnswered()
